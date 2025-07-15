@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <!-- css style -->
+         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="style.css">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppines:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    </head>
+    <body class="overflow-hidden">
+        
+          <video autoplay muted loop class="absolute top-0 left-0 w-[100%] h-[100%] object-cover -z-10">
+            <source src="./Form_background.mp4" type="video/mp4" />
+          </video>
+        
+        <div class="relative z-10 w-full md:w-[900px] backdrop-blur-xl px-8 md:px-20 py-2 mx-auto border-[2px] border-[#022eb3] rounded-lg">
+            <p class="float-right text-white">Already a Member? <span class="text-[#86a4ff]">Sign in</span></p>
+        
+            <div class="text-center mx-auto mt-6 w-[400px]">
+                <h1 class="text-white font-bold text-2xl cursor-pointer">Sign up</h1>
+                <p class="text-slate-100 form-sapn relative my-2 flex justify-between"><span class="relative z-10 py-1 px-3 rounded-full bg-[#022eb3]">1</span><span class="bg-slate-500 relative z-10 py-1 px-3 rounded-full">2</span><span class="bg-slate-500 relative z-10 py-1 px-3 rounded-full">3</span></p>
+                <div class="text-white flex justify-between">
+                    <p>Basic Dateils</p>
+                    <p>Contacts Dateils</p>
+                    <p>Verifaction</p>
+                </div>
+            </div>
+
+            <div>
+                <form>
+                    <div class="flex justify-between flex-col gap-2 md:flex-row">
+                        <div class="w-full">
+                            <h1 class="text-white font-bold text-2xl my-3">Basic Dateils</h1>
+                            <label for="name" class="text-white mx-2 my-2" >Full Name</label>
+                            <input type="name" class="block text-white mx-2 border border-white rounded-xl px-4 py-2 w-full outline-none" placeholder="Enter your name"  required/>
+                        </div>
+                        <div class="flex w-full flex-col justify-center items-center my-6 px-6">
+                            <span class="bg-[#022eb3] mx-auto text-white p-3 text-3xl rounded-full"><ion-icon name="camera-outline"></ion-icon></span>
+                            <p class="text-white">Add Photo</p>
+                        </div>
+                    </div>
+                    <div class="mx-2 my-4 flex flex-col gap-2">
+                        <label for="search" class="text-white my-1">Cosituenthy</label>
+                        <input type="search" class="w-full border border-white outline-none text-white px-4 py-2 rounded-xl" placeholder="Search Commuity"/>
+                    </div>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="flex flex-col gap-2 mx-2 my-4 w-[95%]">
+                            <label class="text-white">Select Party You Work For</label>
+                            <select id="partys" class="text-white cursor-pointer outline-none w-full border border-white px-6 p-2 rounded-xl" name="party">
+                                <option value="volvo" class="bg-slate-700">- Select Party -</option>
+                                <option value="saab" class="bg-slate-700">Eat fastfood</option>
+                                <option value="fiat" class="bg-slate-700">Go Park</option>
+                                <option value="audi" class="bg-slate-700 ">Go Home</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2 mx-2 my-4 w-[95%]">
+                            <label class="text-white">Postion</label>
+                            <select id="partys" class="text-white cursor-pointer outline-none w-full border border-white px-6 p-2 rounded-xl" name="party">
+                                <option value="volvo" class="bg-slate-700">- Select -</option>
+                                <option value="saab" class="bg-slate-700">Web</option>
+                                <option value="fiat" class="bg-slate-700">Graphic</option>
+                                <option value="audi" class="bg-slate-700 ">Information</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row">
+                        <div class="flex flex-col gap-2 mx-2 my-4 w-full">
+                            <label class="text-white">Date Of Birth</label>
+                            <input type="date" class="text-white cursor-pointer outline-none w-full border border-white px-6 p-2 rounded-xl" placeholder="MM/DD/YYYY"/>
+                        </div>
+                        <div class="flex flex-col gap-2 mx-4 my-4 w-full">
+                            <label class="text-white">Gender</label>
+                            <div>
+                                <input type="radio" value="male"/>
+                                <label class="text-white mx-2">Male</label>
+                                <input type="radio" value="famale"/>
+                                <label class="text-white mx-2">Famale</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 mx-2 my-4 w-full">
+                        <label class="text-white">Vision & Mission</label>
+                        <textarea class="text-white border border-white rounded-lg h-32 outline-none p-2" placeholder="Type more..."></textarea>
+                    </div>
+                    <div class="flex justify-center my-4">
+                        <button type="submit" class="text-white md:w-[200px] w-full bg-[#022eb3] p-3 rounded-2xl">Seve & Continue</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>
